@@ -1,0 +1,18 @@
+@mixin shadow-black {box-shadow: 0 .3rem .2rem rgba(0,0,0, .4)}
+@mixin transform-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+//Media query
+@mixin media-q ($media-type, $device-width) {
+    @if $media-type == min {
+        @media only screen and (min-width: $device-width) { @content; }    
+    }
+    
+    @if $media-type == max {
+        @media only screen and (max-width: $device-width) { @content; }
+    }
+}

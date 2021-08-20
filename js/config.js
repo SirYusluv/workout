@@ -1,0 +1,13 @@
+export const MONTHS = ["January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+export const DAYS = [""];
+export const TILE_URL = 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
+export const MAPID = "mapId";
+export const TIME_OUT_SEC = 10;
+export const RUNNING = "Running";
+export const CYCLING = "Cycling";
+export const STORAGENAME = "Saved Exercise";
+export const DATA_PER_PAGE = 7;
+export const PREV = "prev";
+export const NEXT = "next";
+export const LAST = "last"; // used to load last set of workout data and marker to screen
+export const MIN_SCR_SIZE_RESP = 700; // minimum screen size for sidenav responsiveness 

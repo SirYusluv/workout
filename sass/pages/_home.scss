@@ -1,0 +1,13 @@
+.main-body {
+    @include shadow-black;
+
+    display: flex;
+    overflow: hidden;
+    border-radius: .3rem;
+    height: 100%;
+
+    @include media-q (max, 700px) {
+        display: block;    
+        position: relative;
+    }
+}

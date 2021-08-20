@@ -1,0 +1,19 @@
+.workout-info {
+
+    cursor: pointer;
+
+    transition: margin .2s ease .3s;
+
+    &__heading {
+        font-size: 1.8rem;
+    }
+
+    &__div-main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__p-text {
+        font-size: 1.25rem;
+    }
+}

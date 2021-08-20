@@ -1,0 +1,32 @@
+.next-prev {
+    &__btn{
+        display: flex;
+        justify-content: space-between;
+
+        @include media-q (max, 700px) {
+            // display: none;
+        }
+    }
+
+    &__arr { 
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        border-radius: 25px;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        margin: 0;
+    }
+
+    &__arr--l {
+        span {
+            margin-right: .5rem;
+        }
+    }
+
+    &__arr--r {
+        span {
+            margin-left: .5rem;
+        }
+    }
+}

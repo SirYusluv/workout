@@ -1,0 +1,45 @@
+.side-nav {
+    flex: 0 0 30%;
+    background-color: var(--color-grey-dark);
+    padding: 2rem;
+
+    @include media-q (max, 700px) {
+        position: absolute;   
+        width: 100%;
+        top: 70%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // inset: 70% 0 0 0;
+        z-index: 9999;
+        transition: top .2s;
+    }
+
+    @include media-q (max, 1170px) {
+        padding: .5rem;
+    }
+
+    @include media-q (max, 870px) {
+        flex: 0 0 40%;
+    }
+
+    &__h1{
+        color: var(--color-primary);
+        font-size: 2rem;
+        text-transform: uppercase;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__footer {
+        @include media-q (max, 700px) {
+            // display: none;
+        }
+    }
+}

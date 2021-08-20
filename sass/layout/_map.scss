@@ -1,0 +1,13 @@
+.map {
+    flex: 1;
+    background-color: var(--color-white);
+    overflow: hidden;
+
+    @include media-q (max, 700px) {
+        height: 100%;   
+        width: 100%;
+    }
+}
+
+//a style specifically for the map loading icon
+.side-nav__loading--map {margin-top: 25% !important;}

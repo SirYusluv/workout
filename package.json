@@ -1,0 +1,23 @@
+{
+  "name": "workout",
+  "version": "1.0.0",
+  "description": "A work web app",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist",
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass:nw": "node-sass sass/main.scss css/style.css"
+  },
+  "author": "SirYusluv",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "parcel": "^2.0.0-beta.1"
+  },
+  "dependencies": {
+    "core-js": "^3.16.2",
+    "leaflet": "^1.7.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}

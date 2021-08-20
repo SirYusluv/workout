@@ -1,0 +1,98 @@
+.side-nav {
+
+    &__main {
+        height: 10.3375rem;
+
+        //height+some bottom margin to hide form and do some anim on map click
+        // transform: translateY(-11rem);
+        // transition: transform .2s;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__form-container {
+        transition: margin .2s;
+    }
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-div {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__text {
+        margin: 0 2rem 0 0;
+        font-size: 1.5rem;
+    }
+
+    &__input {
+        width: 50%;
+        border-radius: 3px;
+        outline: none;
+        border: none;
+        padding: .5rem;
+    }
+
+    &__div{
+        flex: 0 0 50%;
+        padding: 0 2%;
+    }
+
+    &__item {margin-bottom: .5rem;}
+
+    &__submit {
+
+        &:link,
+        &:visited {
+            display: table;
+            margin: 0 auto;
+            font-size: 1.4rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: .1rem;
+            color: var(--color-white);
+            border-bottom: .1rem solid var(--color-primary);
+
+            transition: all .2;
+        }
+        
+        &:hover{
+            @include shadow-black;
+
+            transform: scale(1.1) translateY(-0.02rem);
+            color: var(--color-white);
+        }
+
+        &:active{
+            box-shadow: none;
+            transform: scale(1.05);
+        }
+
+    }
+
+    &__list {
+        list-style: none;
+        height: 70%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        //firefox
+        scrollbar-width: 0;
+        //explorer and edge
+        -ms-overflow-style:  none;
+
+        // chrome, safari, opera
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    }
+
+    &__footer {
+        font-size: 1.1rem;
+    }
+}
