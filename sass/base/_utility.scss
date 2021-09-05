@@ -10,8 +10,8 @@
 .u-margin-top-medium {margin-top: 3rem;}
 .u-margin-top-11 {margin-top: -11rem;}
 
-.u-align-start {align-self: flex-start;}
-.u-align-end {align-self: flex-end;}
+.u-align-start {-ms-flex-item-align: start;align-self: flex-start;}
+.u-align-end {-ms-flex-item-align: end;align-self: flex-end;}
 
 .u-no-opacity {opacity: 0;} // this is actually with opacity
 

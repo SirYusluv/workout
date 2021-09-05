@@ -2,6 +2,10 @@
 
     cursor: pointer;
 
+    -webkit-transition: margin .2s ease .3s;
+
+    -o-transition: margin .2s ease .3s;
+
     transition: margin .2s ease .3s;
 
     &__heading {
@@ -9,8 +13,12 @@
     }
 
     &__div-main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     &__p-text {

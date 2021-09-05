@@ -1,5 +1,7 @@
 .map {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     background-color: var(--color-white);
     overflow: hidden;
 

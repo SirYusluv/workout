@@ -1,6 +1,10 @@
 .main-body {
     @include shadow-black;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
     overflow: hidden;
     border-radius: .3rem;

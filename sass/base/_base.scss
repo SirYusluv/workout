@@ -3,13 +3,17 @@
 *::before {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 
 html {font-size: 62.5%;}
 body {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 2rem;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color-primary-light)), to(var(--color-primary-dark)));
+    background-image: -o-linear-gradient(top left, var(--color-primary-light), var(--color-primary-dark));
     background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
     height: 100vh;
 
