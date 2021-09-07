@@ -58,6 +58,7 @@ const prevClickedHandler = function() {
 
 const formSubmitHandler = function(e) {
     e.preventDefault();
+    console.log ("Submitted");
 
     const type = form.querySelector(".side-nav__drop-down").value
     const duration = form.querySelector(".side-nav__input--duration").value;

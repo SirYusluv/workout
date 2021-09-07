@@ -481,6 +481,7 @@ const prevClickedHandler = function () {
 
 const formSubmitHandler = function (e) {
   e.preventDefault();
+  console.log("Submitted");
   const type = form.querySelector(".side-nav__drop-down").value;
   const duration = form.querySelector(".side-nav__input--duration").value;
   const distance = form.querySelector(".side-nav__input--distance").value;
@@ -2831,6 +2832,8 @@ class SideNavView {
     this._form.addEventListener("submit", handler);
 
     this._submitBtn.addEventListener("click", handler);
+
+    this.setRequired();
   }
 
   addSideNavClickHandler(handler) {
@@ -2852,6 +2855,13 @@ class SideNavView {
     this._elev.classList.toggle("u-no-display");
 
     this._cadence.classList.toggle("u-no-display");
+
+    this.setRequired();
+  }
+
+  setRequired() {
+    this._elev.classList.contains("u-no-display") ? this._elevField.required = false : this._elevField.required = true;
+    this._cadence.classList.contains("u-no-display") ? this._cadenceField.required = false : this._cadenceField.required = true;
   }
 
   clearFormFields() {

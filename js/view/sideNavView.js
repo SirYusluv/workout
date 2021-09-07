@@ -43,6 +43,7 @@ class SideNavView {
     addFormSubmitHandler(handler) {
         this._form.addEventListener("submit", handler);
         this._submitBtn.addEventListener("click", handler);
+        this.setRequired();
         
     }
 
@@ -64,6 +65,13 @@ class SideNavView {
     toggleForm() {
         this._elev.classList.toggle("u-no-display");
         this._cadence.classList.toggle("u-no-display");
+
+        this.setRequired();
+    }
+
+    setRequired () {
+        this._elev.classList.contains("u-no-display") ? this._elevField.required = false : this._elevField.required = true;
+        this._cadence.classList.contains("u-no-display") ? this._cadenceField.required = false : this._cadenceField.required = true;
     }
 
     clearFormFields() {
